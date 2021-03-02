@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+
+<div> <%= @task.details %></div>
+
+<div class="button">
+<%= link_to "Back to list", tasks_path, class: "btn btn-light" %>
+<%= link_to "Edit this task", edit_restaurant_path, class: "btn btn-light" %>
+<%= link_to "Delete this task", task_path(@task), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-light" %>
+</div>
